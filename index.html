@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="headerRow">
+          <h1>Blog Fake ∭</h1>
+          <button id="showForm" class="active">Fazer Login</button>
+          <div id="userProfileName" class="inactive"></div>
+        </div>
+        <div class="form">
+          <h2>Fazer post</h2>
+          <input type="text" placeholder="Título do post" id="postTitle" />
+          <textarea
+            type="text"
+            placeholder="Conteúdo do post"
+            id="postBody"
+          ></textarea>
+          <input type="submit" value="Enviar post ➬" id="postSubmit" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Feed</h1>
+      </div>
+    </main>
+
+    <div class="loginForm">
+      <div class="formArea">
+        <div class="exit" id="closeForm">✖</div>
+        <h2>Faça o seu login!</h2>
+        <div class="form">
+          <input
+            name="firstName"
+            type="text"
+            placeholder="Nome"
+            id="loginName"
+            value="Bruno"
+          />
+          <input
+            name="lastName"
+            type="text"
+            placeholder="Sobrenome"
+            id="loginLastName"
+            value="Silva"
+          />
+          <input
+            name="profession"
+            type="text"
+            placeholder="Profissão"
+            id="loginProfession"
+            value="Jornalista"
+          />
+          <input
+            name="birthdate"
+            type="date"
+            placeholder="Data de Nascimento"
+            id="loginBirth"
+            value="2007-10-08"
+          />
+
+          <input type="submit" value="Fazer Login" id="loginSubmit" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+    <script src="./posts.js"></script>
+  </body>
+</html>
